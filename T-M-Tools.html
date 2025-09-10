@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Links</title>
+  <style>
+    /* Body with animated light gradient background */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(-45deg, #ffe6e6, #e6f7ff, #fff9e6, #f0fff0);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
+      overflow: hidden;
+    }
+
+    @keyframes gradientAnimation {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    /* Fade-in effect */
+    h1, a {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+    h1:nth-child(1) { animation-delay: 0.3s; }
+    h1:nth-child(2) { animation-delay: 0.6s; }
+    a { animation-delay: 0.9s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      text-align: center;
+      color: #333; /* darker text for light background */
+      margin: 10px 0;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    }
+
+    /* Stylish buttons with glow */
+    a {
+      display: block;
+      margin: 15px 0;
+      padding: 15px 30px;
+      background: #0073e6;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 115, 230, 0.4);
+    }
+
+    a:hover {
+      background: #005bb5;
+      box-shadow: 0 8px 25px rgba(0, 91, 181, 0.6);
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+  <h1>Thanks for Visiting Uchi Embedded Solutions Stall.</h1>
+  <h1>To Know More About the Products Please Click Below.</h1>
+  <a href="https://www.uchiembedded.co.in/product-page/passmark-usb-power-delivery-tester-pro" target="_blank">🔗 USB PDT</a>
+  <a href="https://www.uchiembedded.co.in/product-page/netronics-cando-interface" target="_blank">🔗 CAN Interface</a>
+  <a href="https://binho.io/" target="_blank">🔗 BINHO</a>
+</body>
+</html>
+
